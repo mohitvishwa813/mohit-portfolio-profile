@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: [https://preview--mohit-portfolio-profile.lovable.app/](https://mohit-portfolio-profile.lovable.app/)
+**URL**:https://preview--mohit-portfolio-profile.lovable.app/
 
 ## How can I edit this code?
 
