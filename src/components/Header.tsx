@@ -86,7 +86,7 @@ const Header = () => {
               <button onClick={() => handleNavLinkClick('contact')} className="nav-link text-xl">
                 <span className="text-portfolio-teal">05.</span> Contact
               </button>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary mt-4">
+              <a href="https://drive.google.com/file/d/169nphvio28UrdOQvXtcVKQY6joge_J3B/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn-primary mt-4">
                 Resume
               </a>
             </nav>

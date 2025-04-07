@@ -104,9 +104,9 @@ const ContactSection = () => {
         
         <div className="flex justify-center mt-12 space-x-6 section-content animation-delay-300">
           {[
-            { icon: <Linkedin className="h-6 w-6" />, link: "https://linkedin.com/in/yourusername" },
-            { icon: <Github className="h-6 w-6" />, link: "https://github.com/yourusername" },
-            { icon: <Mail className="h-6 w-6" />, link: "mailto:your.email@example.com" }
+            { icon: <Linkedin className="h-6 w-6" />, link: "https://www.linkedin.com/in/mohit-vishwakarma-b54a5b233/" },
+            { icon: <Github className="h-6 w-6" />, link: "https://github.com/mohitvishwa813" },
+            { icon: <Mail className="h-6 w-6" />, link: "mohitvishwa813@gmail.com" }
           ].map((social, index) => (
             <a 
               key={index}

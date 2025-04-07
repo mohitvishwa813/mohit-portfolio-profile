@@ -86,7 +86,7 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 section-content animation-delay-200">
+        {/* <div className="mt-16 section-content animation-delay-200">
           <h3 className="text-2xl font-semibold mb-6 text-portfolio-lightest-slate flex items-center">
             <Globe className="mr-2 h-5 w-5 text-portfolio-teal" />
             Current Focus
@@ -132,7 +132,7 @@ const SkillsSection = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
