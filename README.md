@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/5785a5ef-06a1-448f-82d5-c1f6e2d6e96d
+**URL**: [https://preview--mohit-portfolio-profile.lovable.app/](https://mohit-portfolio-profile.lovable.app/)
 
 ## How can I edit this code?
 
@@ -14,9 +14,7 @@ Simply visit the [Lovable Project](https://lovable.dev/projects/5785a5ef-06a1-44
 
 Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
