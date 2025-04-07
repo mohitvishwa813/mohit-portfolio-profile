@@ -51,12 +51,12 @@ const Header = () => {
             <button onClick={() => handleNavLinkClick('contact')} className="nav-link">
               <span className="text-portfolio-teal">05.</span> Contact
             </button>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">
+            <a href="https://drive.google.com/file/d/169nphvio28UrdOQvXtcVKQY6joge_J3B/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn-primary">
               Resume
             </a>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button    */   }
           <Button 
             variant="ghost"
             size="icon"
