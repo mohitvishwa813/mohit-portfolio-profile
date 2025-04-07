@@ -44,9 +44,14 @@
     @apply border-border;
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply bg-portfolio-navy text-portfolio-slate;
     font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -55,6 +60,23 @@
 
   section {
     @apply py-20;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-portfolio-navy;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-portfolio-lightest-navy rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-portfolio-teal/50;
   }
 }
 
@@ -72,15 +94,19 @@
   }
 
   .section-heading {
-    @apply text-3xl md:text-4xl font-bold mb-8 flex items-center;
+    @apply text-3xl md:text-4xl font-bold mb-10 flex items-center relative;
   }
 
   .section-heading::before {
     @apply content-[''] inline-block h-[1px] w-12 mr-4 bg-portfolio-teal;
   }
+  
+  .section-heading::after {
+    @apply content-[''] absolute -bottom-3 left-0 h-[1px] w-full max-w-[100px] bg-gradient-to-r from-portfolio-teal to-transparent;
+  }
 
   .tech-tag {
-    @apply px-3 py-1 rounded text-sm bg-portfolio-light-navy text-portfolio-light-slate;
+    @apply px-3 py-1 rounded text-sm bg-portfolio-light-navy text-portfolio-light-slate transition-all duration-300;
   }
   
   .highlight {
@@ -92,11 +118,30 @@
   }
 
   .card {
-    @apply bg-portfolio-light-navy rounded-lg p-6 transition-all duration-300 hover:translate-y-[-5px];
+    @apply bg-portfolio-light-navy rounded-lg p-6 transition-all duration-300 hover:translate-y-[-5px] shadow-lg shadow-black/10;
   }
 
   .section-content {
     @apply animate-fade-in opacity-0 animation-delay-200;
+  }
+  
+  .glow-effect-teal {
+    @apply relative;
+    box-shadow: 0 0 10px 2px rgba(100, 255, 218, 0.3);
+    animation: pulse-teal 2s infinite;
+  }
+}
+
+/* Custom Animations */
+@keyframes pulse-teal {
+  0% {
+    box-shadow: 0 0 5px 1px rgba(100, 255, 218, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px 2px rgba(100, 255, 218, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 5px 1px rgba(100, 255, 218, 0.3);
   }
 }
 
@@ -119,3 +164,37 @@
 .animation-delay-500 {
   animation-delay: 500ms;
 }
+
+/* Enhanced Fade-in Animation */
+@keyframes enhanced-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-enhanced-fade-in {
+  animation: enhanced-fade-in 0.5s ease-out forwards;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
