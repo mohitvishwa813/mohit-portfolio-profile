@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Animated social icons */}
           <div className="mb-6 flex justify-center items-center space-x-5">
             {[
-              { icon: <Github className="h-5 w-5" />, url: "https://github.com/mohitvishwa813", label: "GitHub" },
+              { icon: <Github className="h-5 w-5" />, url: "https://github.com/mohitvishwa813?tab=repositories", label: "GitHub" },
               { icon: <Linkedin className="h-5 w-5" />, url: "https://www.linkedin.com/in/mohit-vishwakarma-b54a5b233/", label: "LinkedIn" },
               { icon: <Mail className="h-5 w-5" />, url: "mohitvishwa813@gmail.com", label: "Email" }
             ].map((social, index) => (
